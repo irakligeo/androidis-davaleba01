@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity"
+    android:weightSum="1"
+    android:id="@+id/main"
+    android:gravity="bottom"
+    android:background="@android:color/darker_gray">
+
+
+
+    <LinearLayout
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true">
+        <Button
+            android:text="r"
+            android:layout_width="match_parent"
+            android:layout_weight="20"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/red"
+            android:background="@color/witeli"
+            android:onClick="onClick"/>
+        <Button
+            android:text="b"
+            android:layout_width="match_parent"
+            android:layout_weight="20"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/blue"
+            android:background="@color/lurji"
+            android:onClick="onClick"/>
+        <Button
+            android:text="w"
+            android:layout_width="match_parent"
+            android:layout_weight="20"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/white"
+            android:background="@color/tetri"
+            android:onClick="onClick"/>
+
+        <Button
+            android:text="g"
+            android:layout_width="match_parent"
+            android:layout_weight="20"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/green"
+            android:background="@color/mwvane"
+            android:onClick="onClick"/>
+
+        <Button
+            android:text="y"
+            android:layout_width="match_parent"
+            android:layout_weight="20"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/yellow"
+            android:background="@color/yviteli"
+            android:onClick="onClick"/>
+    </LinearLayout>
+</RelativeLayout>
